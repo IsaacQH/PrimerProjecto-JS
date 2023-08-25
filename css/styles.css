@@ -1,0 +1,122 @@
+
+/* BODY ************************************************************************************************************/
+
+/* Estilización de todo el documento*/
+*{
+   margin: 0px;                                                  /* Le quita el margen a todos los elementos*/
+   padding: 0px;                                                 /* Le quita el padding a todos los elementos*/
+}
+
+/* Estilizacion del body */
+body{
+    background-image: url('../img/hojas.jpg');                   /* Pone imagen url como background*/
+    background-attachment:fixed;                                 /* Permite hacer scroll y que la img se quede fija*/
+}
+
+/* Estilizacion del fix para arreglar el espaciado */
+.clearfix{
+    float: none;                                                 /*Hace que no flote en ningun lado */
+    clear: both;                                                 /*Limpia los flotados, es decir que manda para abajo los div */
+} 
+
+/* Estilizacion de id global */
+#global{
+    width: 80%;                                                  /* Largo del 65% de la página  */
+    margin: 0px auto;                                            /* Nos permite centrar la sección */
+    margin-top: 30px;                                            /* Margen superior paraa separar 30px */
+    padding: 30px;                                               /* Margen interior de seccion de 20 px */
+    background-color: aliceblue;                               /* Fondo blanco */  
+    box-shadow: 0px 0px 5px #ccc;                              /* Sombra sobre el bloque(Izq, Abajo, Difuminado, Color */ 
+}
+/* HEADER ************************************************************************************************************/
+
+/* Estilizacion de id  logo */
+#logo{
+    font-family:fantasy ;                                        /* Le da un estilo a la tipografía de fantasy*/
+    font-size: 26px;                                             /* Tamaño de letra de 30px*/
+    letter-spacing: 4px;                                         /* Espacio entre letras de 4px */
+    line-height: 80px;                                           /* Crea un espaciado entre las letrasde 80 px */
+    color: whitesmoke;                                         /* Color de fondo blanco*/
+    background-color: #235e3d;                                 /* Color de fondo*/
+    text-align: center;                                          /* Se Centra el texto dentro del div */
+    width: 300px;                                                /* Tamaño del width del div en porcentaje de la sección que se encuentra*/
+    height: 80px;                                                /* Se da una altura del div de 80px */
+    float: left;                                                 /* Nos permite hacer que el elemento se coloque a la izqu */
+    margin-bottom:20px;                                          /* Crea un margen del elemento de 20px hacia abajo para levantarlo un poco */
+    text-transform: uppercase;                                   /*  Convierte todo a mayusculas*/
+}
+ 
+/* Estilizacion de la barra*/
+#menu{
+    font-family: Arial, Helvetica, sans-serif;                   /* Le da un estilo a la tipografía de Arial*/
+    background-color: #333;                                    /* Color de fondo*/
+    width: 100%;                                                 /* Tamaño del 100% de ancho del elemento */
+    text-transform: uppercase;                                   /*  Convierte todo a mayusculas*/
+    margin-bottom: 20px;                                         /* Ayuda a dar un margen blanco de 20 px para separar */
+}
+/* Estilizacion de lista con elemetnos y efecto hover*/
+#menu ul{                                                         /* Una forma de acceder a etiquetas de una id o clase*/
+    line-height: 46px;                                            /* Crea un espaciado entre las letras de 46px */
+    list-style: none;                                             /* Quita el estilo de lista en todos los elementos*/
+
+    & li{                                                         /* Otra forma de acceder a etiquetas de una id o clase*/
+        height: 46px;                                             /* Da una altura de 46px */
+        display: inline-block;                                    /* Muestra la lista de forma lateral*/
+        transition: all 500ms;                                    /* Le da una transición a todos los objetos de la lista de 300 ms*/
+    }
+    & li:hover{                                                   /* Añade acción cuando se pone el mouse sobre*/
+        background-color: #235e3d;                              /* Color de fondo con transition */
+    }
+}
+/* Estilizacion de ref  */
+#menu a{                                                          /* Nueva forma de acceder a etiquetas de una id o clase*/
+    display: block;                                               /* Bloquea el display, , sino no se puede poner margen*/
+    color:white;                                                /* Cambia el color del texto*/
+    text-decoration: none;                                        /* Quita las decoraciones del texto, como el subrayado*/
+    padding: 0px 30px 0px;                                        /* Da un padding left y right de 30px*/
+    text-align: center;                                           /* Alinea el texto al centro*/                
+}
+/* MAIN ************************************************************************************************************/
+
+/* Estilizacion general */
+#posts{
+    width: 60%;                                                   /* Tamaño del 60% de ancho del elemento */
+    float:left;                                                 /* Se pone a flotar a la izquierda la sección post*/
+    font-family: Arial, Helvetica, sans-serif;                  /* Se pone un estilo de font*/
+}
+
+.article {
+    padding-left: 10px;
+    & h2{                                                       /* Nueva forma de acceder a etiquetas de una id o clase*/
+        font-size: 30px;                                        /* Se pone un tamalo de letra de 20px*/
+        color: #333;                                          /* Se pone color a letra*/
+    }
+    & span{                                                     /* Nueva forma de acceder a etiquetas de una id o clase*/
+        display: block;                                         /* Se bloquea el display, sino no se puede poner margen*/
+        color: rgb(156, 143, 143);                            /* Se pone color a letra*/
+        margin: 5px 0px 10px;                                   /* Se crea un margen superior de 5px e inferior de 10px*/ 
+    }
+    & p{                                                        /* Nueva forma de acceder a etiquetas de una id o clase*/
+        margin:10px 0px 20px;                                   /* Se crea un margen superior de 30px e inferior de 20px*/ 
+        line-height: 20px;                                      /* Crea un espaciado entre las letras*/
+        text-align: justify;                                    /* Crea texto justificado*/
+    }
+}
+
+/* Estilizacion de boton leer mas */
+.botonMore{
+    padding: 10px;                                              /* Crea un padding de 10px*/
+    background-color: #235e3d;                                /* Cambia de color el fondo*/
+    color: white;                                             /* Cambia de color la letra a blanco*/
+    font-size: 14px;                                            /* Cambia el tamaño del fondo*/
+    text-align: center;                                         /* Alinea al centro el texto*/
+    text-decoration: none;                                      /* Quita la decoración y subrayado*/
+    display: block;                                             /* Hace que se comporte como bloque*/
+    width: 90px;                                                /* Se define anchura de 90px*/
+    margin-top:0px;                                             /* Se define un margen de separación de 8px*/
+    margin-bottom:30px;                                             /* Se define un margen de separación de 8px*/
+    float: left;                                                /* Se indica que el elemento flote a la izq*/
+
+}
+
+

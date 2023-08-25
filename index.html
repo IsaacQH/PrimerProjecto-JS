@@ -16,9 +16,12 @@
 
         <!--Encabezado de la págona: Titulo y Barra de pestañas-->
         <header>
-            <div id = "logo">Proyecto JS</div>                                            <!-- Titulo/Logo de la página-->
-            <nav>                                                                         <!-- Barra de navegación-->
-                <ul id = "menu">                                                          <!-- Lista de navegación-->
+            <div id = "logo"><h1>Proyecto JS</h1></div>                                   <!-- Titulo/Logo de la página-->
+
+            <div class ="clearfix" ></div>                                                <!-- Div que nos permite mejorar la estilización por separados-->
+
+            <nav  id = "menu">                                                            <!-- Barra de navegación-->
+                <ul>                                                                      <!-- Lista de navegación-->
                     <li><a href = "#">Inicio</a></li>                                     <!-- Elemento 1 de barra-->
                     <li><a href = "#">Reloj</a></li>                                      <!-- Elemento 2 de barra-->
                     <li><a href = "#">Sobre mi</a></li>                                   <!-- Elemento 3 de barra-->
@@ -32,18 +35,35 @@
 
         <!-- Contenido: Sección de contenido de la web y sidebat-->
         <main id = "contenido">                                                           <!-- Encapsulamiento de contenido principal de web-->
-            <div id = "post">                                                             <!-- Div que contiene el post o área principal-->
-                <article class = "post">                                                  <!-- Puede ser p - Se crea sección de post-->
+            <div id = "posts">                                                            <!-- Div que contiene el post o área principal-->
+                <article class = "article">                                               <!-- Puede ser p - Se crea sección de post-->
                     <h2>Titulo del Articulo</h2>                                          <!-- Titulo de articulo-->
-                    <span>Fecha de publicación</span>                                     <!-- Pequeño espacio para escribir la fecha-->
+                    <span class = "fecha">25 de agosto de 2023</span>                     <!-- Pequeño espacio para escribir la fecha-->
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis porttitor finibus. Integer porta nec diam in ornare. Aenean semper gravida felis, sed tristique ipsum bibendum vitae. Aenean quis hendrerit diam. Vestibulum dictum, dui at pretium ultricies, orci mi convallis orci, eget commodo nulla neque et erat. In hac habitasse platea dictumst. Nam a purus sapien. Quisque lacinia eu dolor id congue. Proin at dui gravida, rhoncus ipsum ac, tempus nibh. Praesent ut finibus augue. Proin interdum, ligula et viverra faucibus, arcu lorem sodales augue, volutpat blandit nibh neque quis augue. In id sem ipsum. Quisque sit amet auctor urna, in tincidunt nunc. Duis vehicula mi ac quam dapibus volutpat. Fusce pellentesque felis massa, eu fringilla quam consectetur non. Phasellus dictum lectus tellus, eget bibendum urna maximus sit amet.  
                     </p>
+
+                    <a href="#" class = "botonMore">Leer más...</a>                       <!-- Se añade un botón pero como div de referencia-->
+
+                    <div class ="clearfix" ></div>                                        <!-- Div que nos permite mejorar la estilización por-->
+
+                    <h2>Titulo del Articulo</h2>                                          <!-- Titulo de articulo-->
+                    <span class = "fecha">25 de agosto de 2023</span>                     <!-- Pequeño espacio para escribir la fecha-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis porttitor finibus. Integer porta nec diam in ornare. Aenean semper gravida felis, sed tristique ipsum bibendum vitae. Aenean quis hendrerit diam. Vestibulum dictum, dui at pretium ultricies, orci mi convallis orci, eget commodo nulla neque et erat. In hac habitasse platea dictumst. Nam a purus sapien. Quisque lacinia eu dolor id congue. Proin at dui gravida, rhoncus ipsum ac, tempus nibh. Praesent ut finibus augue. Proin interdum, ligula et viverra faucibus, arcu lorem sodales augue, volutpat blandit nibh neque quis augue. In id sem ipsum. Quisque sit amet auctor urna, in tincidunt nunc. Duis vehicula mi ac quam dapibus volutpat. Fusce pellentesque felis massa, eu fringilla quam consectetur non. Phasellus dictum lectus tellus, eget bibendum urna maximus sit amet.  
+                    </p>
+
+                    <a href="#" class = "botonMore">Leer más...</a>
+                    
+
                 </article>
             </div>
-            <aside id ="sidebar">                                                         <!-- Se crea sección de barra lateral-->
+            <div id ="sidebar">                                                           <!-- Se crea sección de barra lateral-->
 
             </aside>
+
+            <div class ="clearfix" ></div>                                                <!-- Div que nos permite mejorar la estilización por-->
+
         </main>
 
     </section>                                                                            <!-- Se cierra el encapsulamiento global-->
