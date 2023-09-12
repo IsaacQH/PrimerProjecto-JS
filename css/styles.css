@@ -234,12 +234,28 @@ footer{
 #box{
     width: 68%;                                                  /* Anchura de 68%*/
     float: left;                                                 /* Se coloca a la izq*/
-    margin-top: 20px;
+    margin-top: 20px;                                            /* Margen superior*/
 
     & h2{                                                       /* Nueva forma de acceder a etiquetas de una id o clase*/
         font-size: 30px;                                        /* Se pone un tamalo de letra de 20px*/
         color: #333;                                          /* Se pone color a letra*/
         font-family:Helvetica, sans-serif;                      /* Da un estilo de font de Arial*/
-        margin-bottom: 20px;                                    /* MARGEN DE 20PX*/
+        margin-bottom: 20px;                                    /* Margen inferior*/
     }
 }    
+
+/* RELOJ       *******************************************************************************************************/
+
+#reloj{
+    width: 62%;                                                  /* Anchura de 68%*/
+    float: left;                                                 /* Se coloca a la izq*/
+    margin-top: 20px;                                            /* Margen superior*/
+    font-size: 30px;                                             /* Tamaño de letra de 30px*/
+    font-weight: bold;                                           /* Da un estilo de negritas*/                        
+    font-family: Arial, Helvetica, sans-serif;                   /* Da un etilo de letra*/
+    color: #333;                                               /* Coolor de letra*/
+    border: 2px dashed  #a4a2a2;                               /* Borde*/
+    border-radius: 10px;                                         /* Da un borde redondo*/
+    text-align: center;                                          /* Alinea el texto al centro*/
+    padding: 20px;                                               /* Padding/contorno interno de 20 px*/
+}
