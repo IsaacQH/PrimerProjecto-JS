@@ -1,0 +1,27 @@
+/* Tema de colores rojo */
+
+
+/* Estilizacion del body */
+body{
+    background-image: url('../img/rojo.jpg');                   /* Pone imagen url como background*/
+    background-attachment:fixed;                                 /* Permite hacer scroll y que la img se quede fija*/
+}
+
+#logo{
+    background-color: #a91b30;                                 /* Color de fondo*/
+}
+#menu{
+    background-color: #241c1f;                                    /* Color de fondo*/
+}
+#menu ul{                                                         /* Una forma de acceder a etiquetas de una id o clase*/
+    & li:hover{                                                   /* Añade acción cuando se pone el mouse sobre*/
+        background-color: #a91b30;                              /* Color de fondo con transition */
+    }
+}
+.botonMore{
+    background-color: #a91b30;                                /* Cambia de color el fondo*/
+}
+
+form input[type="submit"]:hover{                                 /* Hace un hover en el submit*/
+    background-color:#a91b30;                                  /* Le da un fondo al hover*/
+} 

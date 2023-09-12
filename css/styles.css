@@ -7,12 +7,6 @@
    padding: 0px;                                                 /* Le quita el padding a todos los elementos*/
 }
 
-/* Estilizacion del body */
-body{
-    background-image: url('../img/hojas.jpg');                   /* Pone imagen url como background*/
-    background-attachment:fixed;                                 /* Permite hacer scroll y que la img se quede fija*/
-}
-
 /* Estilizacion del fix para arreglar el espaciado */
 .clearfix{
     float: none;                                                 /*Hace que no flote en ningun lado */
@@ -37,7 +31,6 @@ body{
     letter-spacing: 4px;                                         /* Espacio entre letras de 4px */
     line-height: 80px;                                           /* Crea un espaciado entre las letrasde 80 px */
     color: whitesmoke;                                         /* Color de fondo blanco*/
-    background-color: #235e3d;                                 /* Color de fondo*/
     text-align: center;                                          /* Se Centra el texto dentro del div */
     width: 300px;                                                /* Tamaño del width del div en porcentaje de la sección que se encuentra*/
     height: 80px;                                                /* Se da una altura del div de 80px */
@@ -49,7 +42,6 @@ body{
 /* Estilizacion de la barra*/
 #menu{
     font-family: Arial, Helvetica, sans-serif;                   /* Le da un estilo a la tipografía de Arial*/
-    background-color: #333;                                    /* Color de fondo*/
     width: 100%;                                                 /* Tamaño del 100% de ancho del elemento */
     text-transform: uppercase;                                   /*  Convierte todo a mayusculas*/
     margin-bottom: 20px;                                         /* Ayuda a dar un margen blanco de 20 px para separar */
@@ -63,9 +55,6 @@ body{
         height: 46px;                                             /* Da una altura de 46px */
         display: inline-block;                                    /* Muestra la lista de forma lateral*/
         transition: all 500ms;                                    /* Le da una transición a todos los objetos de la lista de 300 ms*/
-    }
-    & li:hover{                                                   /* Añade acción cuando se pone el mouse sobre*/
-        background-color: #235e3d;                              /* Color de fondo con transition */
     }
 }
 /* Estilizacion de ref  */
@@ -106,14 +95,13 @@ body{
 /* Estilizacion de boton leer mas */
 .botonMore{
     padding: 10px;                                              /* Crea un padding de 10px*/
-    background-color: #235e3d;                                /* Cambia de color el fondo*/
     color: white;                                             /* Cambia de color la letra a blanco*/
     font-size: 14px;                                            /* Cambia el tamaño del fondo*/
     text-align: center;                                         /* Alinea al centro el texto*/
     text-decoration: none;                                      /* Quita la decoración y subrayado*/
     display: block;                                             /* Hace que se comporte como bloque*/
     width: 90px;                                                /* Se define anchura de 90px*/
-    margin-top:0px;                                             /* Se define un margen de separación de 8px*/
+    margin-top:10px;                                             /* Se define un margen de separación de 8px*/
     margin-bottom:30px;                                         /* Se define un margen de separación de 8px*/
     float: left;                                                /* Se indica que el elemento flote a la izq*/
 
@@ -179,7 +167,6 @@ form input[type="submit"]{                                       /* Input submit
 
 } 
 form input[type="submit"]:hover{                                 /* Hace un hover en el submit*/
-    background-color:#235e3d;                                  /* Le da un fondo al hover*/
     cursor:pointer;                                              /* Cambia cursos a pointer*/
 } 
 
@@ -199,4 +186,43 @@ footer{
 /* SLIDER       *******************************************************************************************************/
 .bx-wraper, .bx-viewport{
     height: 250px !important;
+}
+
+#theme-Selector{ 
+    position: fixed;                                             /* Posicion no se modifica aunque se haga scroll*/
+    top: 40%;                                                    /* Se coloca al 40% del top*/
+    background: rgba(51,51,51, 0.60);                          /* Se da color transparente*/
+    width: 50px;                                                 /* Se dan las dimensiaones*/
+    height: 100px;                                               /* Se dan las dimensiaones*/
+    border-top-right-radius: 15px;                               /* Borde redondo arriba a la derecha*/
+    border-bottom-right-radius: 15px;                            /* Borde redondo abajo a la derecha*/
+
+    & #to-Green, #to-Red, #to-Blue{
+        width: 25px;                                             /* Se dan las dimensiaones*/
+        height: 25px;                                            /* Se dan las dimensiaones*/
+        border:1px solid white;                                /* Crea un borde blanco*/
+        border-radius: 40px;                                     /* Hace circulo el tema*/
+        display: block;                                          /* Bloquea el display para poder moverlo*/
+        margin:0px auto;                                         /* Nos permite centrar el div*/
+        margin-top: 5px;                                         /* Lo espacia 5px arriba*/
+        margin-bottom: 5px;                                      /* Lo espacia 5px abajo*/
+        cursor: pointer;                                          /* Hace un pinter al cursor*/
+    }
+
+    #to-Green{
+        background-color: #235e3d;                             /* Color de fondo*/
+    }
+    #to-Red{
+        background-color: #a91b30;                             /* Color de fondo*/
+    }
+    #to-Blue{
+        background-color: #0f3c73;                             /* Color de fondo*/
+    }
+} 
+
+.scroll{
+    color:white;                                               /* Letra color blanca*/
+    text-decoration: none;
+    display: block;
+    float: right;
 }

@@ -1,0 +1,27 @@
+/* Tema de colores azul */
+
+
+/* Estilizacion del body */
+body{
+    background-image: url('../img/blue.jpg');                   /* Pone imagen url como background*/
+    background-attachment:fixed;                                 /* Permite hacer scroll y que la img se quede fija*/
+}
+
+#logo{
+    background-color: #0f3c73;                                 /* Color de fondo*/
+}
+#menu{
+    background-color: #262e37;                                    /* Color de fondo*/
+}
+#menu ul{                                                         /* Una forma de acceder a etiquetas de una id o clase*/
+    & li:hover{                                                   /* Añade acción cuando se pone el mouse sobre*/
+        background-color: #0f3c73;                              /* Color de fondo con transition */
+    }
+}
+.botonMore{
+    background-color: #0f3c73;                                /* Cambia de color el fondo*/
+}
+
+form input[type="submit"]:hover{                                 /* Hace un hover en el submit*/
+    background-color:#0f3c73;                                  /* Le da un fondo al hover*/
+} 

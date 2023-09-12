@@ -1,0 +1,27 @@
+/* Tema de colores verde */
+
+
+/* Estilizacion del body */
+body{
+    background-image: url('../img/hojas.jpg');                   /* Pone imagen url como background*/
+    background-attachment:fixed;                                 /* Permite hacer scroll y que la img se quede fija*/
+}
+
+#logo{
+    background-color: #235e3d;                                 /* Color de fondo*/
+}
+#menu{
+    background-color: #242a25;                                    /* Color de fondo*/
+}
+#menu ul{                                                         /* Una forma de acceder a etiquetas de una id o clase*/
+    & li:hover{                                                   /* Añade acción cuando se pone el mouse sobre*/
+        background-color: #235e3d;                              /* Color de fondo con transition */
+    }
+}
+.botonMore{
+    background-color: #235e3d;                                /* Cambia de color el fondo*/
+}
+
+form input[type="submit"]:hover{                                 /* Hace un hover en el submit*/
+    background-color:#235e3d;                                  /* Le da un fondo al hover*/
+} 

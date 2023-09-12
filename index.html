@@ -7,6 +7,9 @@
 
     <!-- Cargando Scripts de CSS-->
     <link rel = "stylesheet" type = "text/css" href = "css/styles.css"/> 
+    <link id = "theme" rel = "stylesheet" type = "text/css" href = "css/green.css"/> 
+    <!--<link rel = "stylesheet" type = "text/css" href = "css/blue.css"/> -->
+    <!--<link rel = "stylesheet" type = "text/css" href = "css/green.css"/>   -->
 
     <!-- Carga jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -25,6 +28,12 @@
 </head>
 
 <body>
+    <!-- Botonera para cambiar los temas-->
+    <div id="theme-Selector">                                                            <!-- Se secciona un div botones de temas-->
+        <div id="to-Green"></div>
+        <div id="to-Red"></div>
+        <div id="to-Blue"></div>
+    </div>
     <!--Contenedor Global: Será la caja blanca-->
     <section id = "global">                                                               <!-- Encapsula todo en un section-->
 
@@ -97,6 +106,8 @@
 
     <footer>                                                                              <!-- Se crea el apartado de pié de págona-->
         Pie de página  © 
+
+        <a href="#" class="scroll">Scroll arriba</a>                                       <!-- scroll-->
     </footer>
 
 </body>
