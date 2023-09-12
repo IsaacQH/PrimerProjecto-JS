@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web: Prueba</title>
+
+    <!-- Cargando Scripts de CSS-->
+    <link rel = "stylesheet" type = "text/css" href = "css/styles.css"/> 
+    <link id = "theme" rel = "stylesheet" type = "text/css" href = "css/green.css"/> 
+
+    <!-- Carga jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <!-- Cargando Scrips de JS-->
+    <script type="text/javascript" src = "js/about.js"></script>
+
+</head>
+
+<body>
+    <!-- Botonera para cambiar los temas-->
+    <div id="theme-Selector">                                                            <!-- Se secciona un div botones de temas-->
+        <div id="to-Green"></div>
+        <div id="to-Red"></div>
+        <div id="to-Blue"></div>
+    </div>
+    <!--Contenedor Global: Será la caja blanca-->
+    <section id = "global">                                                               <!-- Encapsula todo en un section-->
+
+        <!--Encabezado de la págona: Titulo y Barra de pestañas-->
+        <header>
+            <div id = "logo"><h1>Proyecto JS</h1></div>                                   <!-- Titulo/Logo de la página-->
+
+            <div class ="clearfix" ></div>                                                <!-- Div que nos permite mejorar la estilización por separados-->
+
+            <nav  id = "menu">                                                            <!-- Barra de navegación-->
+                <ul>                                                                      <!-- Lista de navegación-->
+                    <li><a href = "index.html">Inicio</a></li>                            <!-- Elemento 1 de barra-->
+                    <li><a href = "#">Reloj</a></li>                                      <!-- Elemento 2 de barra-->
+                    <li><a href = "about.html">Sobre mi</a></li>                          <!-- Elemento 3 de barra-->
+                    <li><a href = "#">Contacto</a></li>                                   <!-- Elemento 4 de barra-->
+                </ul>
+            </nav>   
+        </header>
+
+        <!-- Contenido: Sección de contenido de la web y sidebat-->
+        <main id = "contenido">                                                           <!-- Encapsulamiento de contenido principal de web-->
+            <div id = "box">                                                            
+                <!-- Cargar acordeon-->
+
+            </div>
+
+            <aside id ="sidebar">                                                          <!-- Se crea sección de barra lateral-->
+                <div id = "about">
+                    <h4><span>¿Caracoles?</span></h4>                                      <!-- Se coloca dentro de un span para darle más forma-->
+                    <img src="img/caracol.jpg" />                                          <!-- Se inserta imagen-->
+                    <p>                                                                    <!-- Secrea un parrafo-->
+                        Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit. Nullam iaculis porttitor finibus. Integer porta nec diam in ornare. Aenean semper gravida felis, sed tristique ipsum bibendum vitae.
+                    </p>
+                </div>
+
+                <div id ="login">
+                    <h4><span>Log in:</span></h4>                                      <!-- Se coloca dentro de un span para darle más forma-->
+                    <form>
+                        <label for = "name">Nombre: </label>                           <!-- Labels para inputs-->
+                        <input id="name" type = "text" name = "name"/>                           <!-- Se definen los inputs-->
+
+                        <label for = "email">Email: </label>
+                        <input id="email" type = "email" name = "email"/>
+
+                        <label for = "password">Contraseña: </label>
+                        <input id="password" type = "password" name = "password"/>
+
+                        <div class ="clearfix" ></div>                                 <!-- Div que nos permite mejorar la estilización por-->
+
+                        <input type="submit"/> 
+                    </form>
+                </div>
+            </aside>
+
+            <div class ="clearfix" ></div>                                                 <!-- Div que nos permite mejorar la estilización por-->
+
+        </main>
+
+    </section>                                                                             <!-- Se cierra el encapsulamiento global-->
+
+    <footer>                                                                              <!-- Se crea el apartado de pié de págona-->
+        Pie de página  © 
+
+        <a href="#" class="scroll">Scroll arriba</a>                                       <!-- scroll-->
+    </footer>
+
+</body>
+
+</html>
