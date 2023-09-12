@@ -1,16 +1,17 @@
 $(document).ready(function(){                //Carga el código JS
 
     //SLIDER *******************************************************************************************************
-    $('.galeria').bxSlider({                //Se aplica la funcion bSlider del plugin en div de galeria
-        mode: 'fade',                       //Efecto de desaparicion
-        caption: true,                      //Que haya un caption true
-        slideWidth: 1400,                   //Una anchura de 1400
-        resposive: true,                    //Resposivo
-        pager:false                         //Quita el paginado de las fotos
-    })
+    if(window.location.href.indexOf('index') > -1){      //Condicional que hace que solofuncione con archivo index
+        $('.galeria').bxSlider({                //Se aplica la funcion bSlider del plugin en div de galeria
+            mode: 'fade',                       //Efecto de desaparicion
+            caption: true,                      //Que haya un caption true
+            slideWidth: 1400,                   //Una anchura de 1400
+            resposive: true,                    //Resposivo
+            pager:false                         //Quita el paginado de las fotos
+        })
 
-    //POSTS ********************************************************************************************************
-    var posts = [                          //Se crea array con varios objetos JSON para los post
+        //POSTS ********************************************************************************************************
+        var posts = [                          //Se crea array con varios objetos JSON para los post
         {                                  //Objeto JSON 1
             title: 'Article 1',
             date: 'Publicado el ' + moment().format('Do MMMM YYYY'),        //Pone fecha usando formado moment JS 
@@ -39,7 +40,7 @@ $(document).ready(function(){                //Carga el código JS
     ]
 
     posts.forEach((item, index) => {                  //Se crea ciclo forEach que revise cada item e index
-        //Creamos una variable que cree plantillas JS en HTML de cada valor del item
+    //Creamos una variable que cree plantillas JS en HTML de cada valor del item
         var post = `
             <h2>${item.title}</h2>                                          
                 <span class = "fecha">${item.date}</span>      
@@ -51,9 +52,13 @@ $(document).ready(function(){                //Carga el código JS
                 </p> `
 
         $('.article').append(post)        
-        //console.log(post)
+    //console.log(post)
     })
 
+}
+    
+
+    
     //SELECTOR DE TEMAS ************************************************************************************************
     var theme = $('#theme')                          //Guarda en variable el script de temas
     
