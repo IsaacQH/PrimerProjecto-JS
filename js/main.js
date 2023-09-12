@@ -68,14 +68,35 @@ $(document).ready(function(){                //Carga el código JS
     })
 
     //SCROLL ***********************************************************************************************************
-    $('.scroll').click(function(e){                   //Crea evento click en el elemento scroll
+    $('.scroll').click(function(e){                  //Crea evento click en el elemento scroll
         e.preventDefault()                           //Nos permite que no se refreshee cuando se de click                           
-        $('body, html').animate({                  //Hace una animación en html y body
+        $('body, html').animate({                    //Hace una animación en html y body
             scrollTop: 0                             //Hace scroll hacia el pixel 0
-        },500)                                      //lo hace en 500ms
+        },500)                                       //lo hace en 500ms
         return false                                 //Nos permite que no se refreshee cuando se de click
     })
 
+    //LOGIN FALSO ***********************************************************************************************************
+    $('#login form').submit(function(){              //Crea evento sugmir en el form completo del login
+        var formName = $('#name').val();             //Guarda en variable el valor del name al dar submit
+        localStorage.setItem('name', formName)       //Guarda en LocalStorage el item forname
+    })
+
+    var formName = localStorage.getItem('name')      //Revisa el valor que este guardado
+
+    if(formName != null && formName !=""){           //Si existe un valor en formName
+        var about = $('#about')
+        about.append("<hr><br>Bienvenido, <strong>" + formName+ ".<strong>")  // Añade al about el nombre de usuario
+        about.append("<br> <a href ='#' id ='logout'> Cerrar sesión </a>")    //Añade etiqueta a para cerrar sesión
+        $('#login').hide()                           //Escdonde el login
+
+        $('#logout').click(function(){               //evento click para cerrar sesion
+            localStorage.clear()                     //Limpia  toto el local storage
+            location.reload()                          //Hace un reload a la página
+        })
+
+
+    }
 
 
 })
