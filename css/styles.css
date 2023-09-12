@@ -188,6 +188,7 @@ footer{
     height: 250px !important;
 }
 
+/* THEMES       *******************************************************************************************************/
 #theme-Selector{ 
     position: fixed;                                             /* Posicion no se modifica aunque se haga scroll*/
     top: 40%;                                                    /* Se coloca al 40% del top*/
@@ -220,9 +221,25 @@ footer{
     }
 } 
 
+/* SCROLL       *******************************************************************************************************/
 .scroll{
     color:white;                                               /* Letra color blanca*/
-    text-decoration: none;
-    display: block;
-    float: right;
+    text-decoration: none;                                       /* Quitar decoración*/
+    display: block;                                              /* Se bloquea para poder mover*/
+    float: right;                                                /* Se coloca a la derecha*/
 }
+
+/* ACORRDEON       *******************************************************************************************************/
+
+#box{
+    width: 68%;                                                  /* Anchura de 68%*/
+    float: left;                                                 /* Se coloca a la izq*/
+    margin-top: 20px;
+
+    & h2{                                                       /* Nueva forma de acceder a etiquetas de una id o clase*/
+        font-size: 30px;                                        /* Se pone un tamalo de letra de 20px*/
+        color: #333;                                          /* Se pone color a letra*/
+        font-family:Helvetica, sans-serif;                      /* Da un estilo de font de Arial*/
+        margin-bottom: 20px;                                    /* MARGEN DE 20PX*/
+    }
+}    

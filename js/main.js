@@ -1,7 +1,7 @@
 $(document).ready(function(){                //Carga el código JS
 
     //SLIDER *******************************************************************************************************
-    if(window.location.href.indexOf('index') > -1){      //Condicional que hace que solofuncione con archivo index
+    if(window.location.href.indexOf('index') > -1){      //Condicional que hace que solo funcione con archivo index.js
         $('.galeria').bxSlider({                //Se aplica la funcion bSlider del plugin en div de galeria
             mode: 'fade',                       //Efecto de desaparicion
             caption: true,                      //Que haya un caption true

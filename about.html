@@ -11,8 +11,12 @@
 
     <!-- Carga jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+    <!-- Carga jQuery UI-->
+    <script type="text/javascript" src = "js/jquery-UI/jquery-ui.min.js"></script>
+    <link rel = "stylesheet"  href = "js/jquery-UI/jquery-ui.min.css"/>
+    <link rel = "stylesheet"  href = "js/jquery-UI/jquery-ui.structure.min.css"/>
+    <link rel = "stylesheet"  href = "js/jquery-UI/jquery-ui.theme.min.css"/>
 
     <!-- Cargando Scrips de JS-->
     <script type="text/javascript" src = "js/about.js"></script>
@@ -46,13 +50,34 @@
         </header>
 
         <!-- Contenido: Sección de contenido de la web y sidebat-->
-        <main id = "contenido">                                                           <!-- Encapsulamiento de contenido principal de web-->
-            <div id = "box">                                                            
-                <!-- Cargar acordeon-->
+        <main id = "contenido">                                                <!-- Encapsulamiento de contenido principal de web-->
 
+            <div id = "box">                                                               <!-- Cargar acordeon-->      
+                <h2>Sobre mi ...</h2>        
+                <div id="acordeon">
+                    <h3>¿Quién soy?</h3>
+                    <div>
+                        <p>
+                            Proin interdum, ligula et viverra faucibus, arcu lorem sodales augue, volutpat blandit nibh neque quis augue.
+                        </p>
+                    </div>
+                    <h3>Mision</h3>
+                    <div>
+                        <p>
+                            Proin interdum, ligula et viverra faucibus, arcu lorem sodales augue, volutpat blandit nibh neque quis augue.
+                        </p>
+                    </div>
+                    <h3>Vision</h3>
+                    <div>
+                        <p>
+                            Proin interdum, ligula et viverra faucibus, arcu lorem sodales augue, volutpat blandit nibh neque quis augue.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <aside id ="sidebar">                                                          <!-- Se crea sección de barra lateral-->
+
                 <div id = "about">
                     <h4><span>¿Caracoles?</span></h4>                                      <!-- Se coloca dentro de un span para darle más forma-->
                     <img src="img/caracol.jpg" />                                          <!-- Se inserta imagen-->
@@ -65,7 +90,7 @@
                     <h4><span>Log in:</span></h4>                                      <!-- Se coloca dentro de un span para darle más forma-->
                     <form>
                         <label for = "name">Nombre: </label>                           <!-- Labels para inputs-->
-                        <input id="name" type = "text" name = "name"/>                           <!-- Se definen los inputs-->
+                        <input id="name" type = "text" name = "name"/>                 <!-- Se definen los inputs-->
 
                         <label for = "email">Email: </label>
                         <input id="email" type = "email" name = "email"/>
