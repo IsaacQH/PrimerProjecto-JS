@@ -11,15 +11,18 @@
 
     <!-- Carga jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+    
     <!-- Carga jQuery UI-->
     <script type="text/javascript" src = "js/jquery-UI/jquery-ui.min.js"></script>
     <link rel = "stylesheet"  href = "js/jquery-UI/jquery-ui.min.css"/>
     <link rel = "stylesheet"  href = "js/jquery-UI/jquery-ui.structure.min.css"/>
     <link rel = "stylesheet"  href = "js/jquery-UI/jquery-ui.theme.min.css"/>
 
+    <!-- Plugin Validación jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
     <!-- Cargando Scrips de JS-->
-    <script type="text/javascript" src = "js/about.js"></script>
+    <script type="text/javascript" src = "js/contacto.js"></script>
 
 </head>
 
@@ -52,28 +55,33 @@
         <!-- Contenido: Sección de contenido de la web y sidebat-->
         <main id = "contenido">                                                <!-- Encapsulamiento de contenido principal de web-->
 
-            <div id = "box">                                                               <!-- Cargar acordeon-->      
-                <h2>Sobre mi ...</h2>        
-                <div id="acordeon">
-                    <h3>¿Quién soy?</h3>
-                    <div>
-                        <p>
-                            Proin interdum, ligula et viverra faucibus, arcu lorem sodales augue, volutpat blandit nibh neque quis augue.
-                        </p>
-                    </div>
-                    <h3>Mision</h3>
-                    <div>
-                        <p>
-                            Proin interdum, ligula et viverra faucibus, arcu lorem sodales augue, volutpat blandit nibh neque quis augue.
-                        </p>
-                    </div>
-                    <h3>Vision</h3>
-                    <div>
-                        <p>
-                            Proin interdum, ligula et viverra faucibus, arcu lorem sodales augue, volutpat blandit nibh neque quis augue.
-                        </p>
-                    </div>
-                </div>
+            <div id = "box">                                                               <!--Div contacto-->      
+                <h2 id=>Contacto:</h2>
+                <form action="" method="POST" id="contact">
+                    <label for = "fname">Nombre: </label>                           <!-- Labels para inputs-->
+                    <input id="fname" type = "text" name = "fname" data-validation="alphanumeric" data-validation-length="min4">                                  <!-- Se definen los inputs con datos de validación-->
+
+                    <label for = "surname">Apellido: </label>
+                    <input id="surname" type = "text" name = "surname"  data-validation="alphanumeric" data-validation-length="min4"/>
+
+                    <label for = "mail">Email: </label>
+                    <input id="mail" type = "email" name = "mail"  data-validation="email" data-validation-length="min4"/>
+
+                    <label for = "sex">Género: </label>
+                    <select name = "sex" id="sex" data-validation="required">     <!--Validación del dato forzoso-->
+                        <option value ="men">Hombre</option>
+                        <option value ="wom">Mujer</option>
+                        <option value ="oth">Otro</option>
+                    </select>
+
+                    <label for = "date">Fecha de nacimiento: </label>
+                    <input id="date" type = "text" name = "date"  data-validation="date" data-validation-format="dd-mm-yyyy"/>
+
+                    <label for = "year">Edad: </label>
+                    <input id="year" type = "number" name = "year" data-validation="number" data-validation-length="min1"/>
+
+                    <input type="submit" value="Enviar"/>
+                </form>
             </div>
 
             <aside id ="sidebar">                                                          <!-- Se crea sección de barra lateral-->

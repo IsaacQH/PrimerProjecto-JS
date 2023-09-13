@@ -146,7 +146,9 @@ form label{                                                     /* Estilo para l
 
 form input[type = "text"],                                      /* Inputs de texto, pasword y mail*/
 form input[type = "password"],
-form input[type = "email"]{
+form input[type = "email"],
+form input[type = "number"],
+select{
     padding: 5px;                                               /* Se da un padding de 5px*/
     border-radius: 2px;                                         /* Se crea un borde con radio de 2px*/
     border:1px solid #ccc;                                    /* Se crea un borde de 1px solido de color*/
@@ -244,10 +246,10 @@ footer{
     }
 }    
 
-/* RELOJ       *******************************************************************************************************/
+/* RELOJ       ***********************************************************************************************************/
 
 #reloj{
-    width: 62%;                                                  /* Anchura de 68%*/
+    width: 62%;                                                  /* Anchura de 62%*/
     float: left;                                                 /* Se coloca a la izq*/
     margin-top: 20px;                                            /* Margen superior*/
     font-size: 30px;                                             /* Tamaño de letra de 30px*/
@@ -258,4 +260,25 @@ footer{
     border-radius: 10px;                                         /* Da un borde redondo*/
     text-align: center;                                          /* Alinea el texto al centro*/
     padding: 20px;                                               /* Padding/contorno interno de 20 px*/
+}
+
+/* FORMULARIO       *******************************************************************************************************/
+
+#contact{
+    width: 50%;                                                  /* Anchura de 60%*/
+    margin-top: 5px;                                            /* Margen superior*/
+    font-family: Arial, Helvetica, sans-serif;                   /* Da un etilo de letra*/
+    display: block;                                              /* Se bloquea para poder mover*/
+
+    & label{
+        width: 100%;                                             /* Anchura de 60%*/
+    }
+}
+
+.form-error{
+    display: block;
+    float:right;
+    font-size: 13px;
+    color: #b82828;
+    margin-top: 10px;
 }
